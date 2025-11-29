@@ -1,1 +1,220 @@
 <h1> Github page</h1>
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Currículum - Eduardo Bernabé</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f4f4f4;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 40px 0;
+            text-align: center;
+        }
+
+        .profile-img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            border: 5px solid white;
+            margin-bottom: 15px;
+        }
+
+        h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+        }
+
+        .subtitle {
+            font-size: 1.2em;
+            opacity: 0.9;
+        }
+
+        section {
+            background: white;
+            margin: 20px 0;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+
+        h2 {
+            color: #667eea;
+            border-bottom: 2px solid #667eea;
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+        }
+
+        .experience-item, .education-item {
+            margin-bottom: 20px;
+        }
+
+        .date {
+            color: #666;
+            font-style: italic;
+        }
+
+        ul {
+            list-style-position: inside;
+            margin-left: 20px;
+        }
+
+        li {
+            margin-bottom: 5px;
+        }
+
+        .skills {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+
+        .skill-tag {
+            background: #667eea;
+            color: white;
+            padding: 5px 15px;
+            border-radius: 20px;
+            font-size: 0.9em;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: #333;
+            color: white;
+        }
+
+        .contact-info {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+
+        @media (max-width: 600px) {
+            .container {
+                padding: 10px;
+            }
+            
+            section {
+                padding: 20px;
+            }
+            
+            h1 {
+                font-size: 2em;
+            }
+            
+            .contact-info {
+                flex-direction: column;
+                gap: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <!-- Cambia "foto.jpg" por el nombre de tu foto -->
+            <img src="foto.jpg" alt="Foto de Eduardo Bernabé" class="profile-img">
+            <h1>Eduardo Bernabé</h1>
+            <p class="subtitle">Profesor de estadística interesado en análisis de datos</p>
+        </div>
+    </header>
+
+    <div class="container">
+        <section id="sobre-mi">
+            <h2>Sobre Mí</h2>
+            <p>Soy Licenciado en Física y Matemáticas con una sólida formación en pensamiento analítico y resolución de problemas complejos. Mi pasión por los números y el análisis me ha llevado a especializarme en estadística y explorar el fascinante mundo del machine learning.</p>
+            <p>Actualmente me dedico a la docencia, compartiendo mi conocimiento en estadística mientras continúo desarrollando mis habilidades en análisis de datos y programación. Busco oportunidades para aplicar mis conocimientos matemáticos en proyectos de data science y machine learning, donde pueda contribuir con mi perspectiva única como físico-matemático.</p>
+        </section>
+
+        <section id="habilidades">
+            <h2>Habilidades Técnicas</h2>
+            <div class="skills">
+                <span class="skill-tag">HTML y CSS básicos</span>
+                <span class="skill-tag">Python intermedio</span>
+                <span class="skill-tag">C++ intermedio</span>
+                <span class="skill-tag">Análisis estadístico</span>
+                <span class="skill-tag">Matemáticas aplicadas</span>
+                <span class="skill-tag">Física computacional</span>
+                <span class="skill-tag">Machine Learning</span>
+                <span class="skill-tag">Análisis de datos</span>
+            </div>
+        </section>
+
+        <section id="experiencia">
+            <h2>Proyectos y Experiencia</h2>
+            <div class="experience-item">
+                <h3>Desarrollo de Cursos en Línea</h3>
+                <p class="date">2023 - Presente</p>
+                <ul>
+                    <li>Diseño y desarrollo de material educativo para cursos de estadística y matemáticas</li>
+                    <li>Creación de contenido interactivo y ejercicios prácticos</li>
+                    <li>Implementación de ejemplos de análisis de datos en Python</li>
+                    <li>Desarrollo de material didáctico para machine learning básico</li>
+                </ul>
+            </div>
+            <div class="experience-item">
+                <h3>Proyectos de Análisis de Datos</h3>
+                <p class="date">2024</p>
+                <ul>
+                    <li>Análisis de datasets educativos utilizando Python y pandas</li>
+                    <li>Desarrollo de modelos predictivos básicos para proyectos académicos</li>
+                    <li>Visualización de datos matemáticos y físicos</li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="educacion">
+            <h2>Educación y Cursos</h2>
+            <div class="education-item">
+                <h3>Licenciado en Física y Matemáticas</h3>
+                <p class="date">Instituto Politécnico Nacional | 2015</p>
+                <p>Formación dual en física y matemáticas con enfoque en métodos numéricos y análisis.</p>
+            </div>
+            <div class="education-item">
+                <h3>Semillero Zero2Hero 2025</h3>
+                <p class="date">2025</p>
+                <p>Programa de formación en desarrollo y tecnologías emergentes.</p>
+            </div>
+            <div class="education-item">
+                <h3>Cursos Complementarios</h3>
+                <p>Estadística avanzada, Machine Learning fundamentals, Programación en Python para ciencia de datos.</p>
+            </div>
+        </section>
+
+        <section id="contacto">
+            <h2>Contacto</h2>
+            <div class="contact-info">
+                <p>📧 eduardo.bernabe@hotmail.com</p>
+                <p>🔗 LinkedIn: linkedin.com/in/eduardobernabe</p>
+                <p>💼 GitHub: github.com/eduardobernabe</p>
+            </div>
+        </section>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Eduardo Bernabé. Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>
